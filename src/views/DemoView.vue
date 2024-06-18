@@ -9,7 +9,7 @@
       style="width: 90%;"
       scrolling="no"
       title="Untitled"
-      src="https://codepen.io/rafaeloviedo/embed/mdYXywj?default-tab=html%2Cresult"
+      src="https://codepen.io/rafaeloviedo/embed/mdYXywj?default-tab=html%2Cresult&editable=true"
       frameborder="no"
       loading="lazy"
       allowtransparency="true"
@@ -31,8 +31,11 @@
   justify-content: space-evenly;
   align-items: center;
   overflow: scroll;
+  color: #176B87;
+  background: #EEF5FF;
 }
 #demo-view-title {
+  width: 90%;
   font-weight: bold;
   text-align: center;
 }

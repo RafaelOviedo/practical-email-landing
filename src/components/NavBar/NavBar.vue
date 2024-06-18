@@ -142,7 +142,7 @@ const setLocale = (localeOption) => {
   width: 100%;
   height: 7vh;
   font-family: SourceCodePro;
-  background: #05CDE9;
+  background: #176B87;
   border-bottom: 1px solid #5B5B5B;
 }
 .open-navbar-menu-button {
@@ -174,7 +174,7 @@ const setLocale = (localeOption) => {
   width: 100%;
   height: 7vh;
   padding-right: 10px;
-  background: #05CDE9;
+  background: #176B87;
 }
 #close-navbar-menu-button {
   display: flex;
@@ -194,7 +194,7 @@ const setLocale = (localeOption) => {
   width: 100%;
   height: 72%;
   padding-left: 10px;
-  background: #05CDE9;
+  background: #176B87;
   border-top: 1px solid #27272A;
   border-bottom: 1px solid #27272A;
 }
@@ -215,10 +215,12 @@ const setLocale = (localeOption) => {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 180px;
+  width: 230px;
   height: 100%;
   text-decoration: none;
   color: #fff;
+  padding-left: 15px;
+  font-size: 20px;
 }
 .trinity-logo {
   width: 35px;
