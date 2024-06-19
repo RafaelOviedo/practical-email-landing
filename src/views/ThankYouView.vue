@@ -57,4 +57,11 @@ const { translate } = useLocalization();
   width: 170px;
   height: 170px;
 }
+
+@media screen and (width > 768px) {
+  #thanks-container {
+    width: 60%;
+    height: 50%;
+  }
+}
 </style>

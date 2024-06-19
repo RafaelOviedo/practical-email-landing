@@ -247,7 +247,7 @@ const { translate } = useLocalization();
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   height: 40%;
   font-size: 20px;
