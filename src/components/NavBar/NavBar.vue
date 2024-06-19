@@ -6,7 +6,12 @@
       id="logo-container"
       to="/"
     >
-      PRACTICAL EMAIL ⚡
+      PRACTICAL EMAIL
+      <img
+        class="practical-email-logo"
+        src="../../assets//images/practical-email.png"
+        alt="main logo"
+      >
     </RouterLink>
 
     <button
@@ -35,6 +40,13 @@
         >
           Demo
         </RouterLink>
+        <!-- <RouterLink
+          class="nav-item"
+          to="/about"
+          @click="closeNavBarPanel"
+        >
+          About
+        </RouterLink> -->
         
         <!-- <div id="locale-buttons-container">
           <button
@@ -85,6 +97,13 @@
             >
               Demo
             </RouterLink>
+            <!-- <RouterLink
+              class="nav-item"
+              to="/about"
+              @click="closeNavBarPanel"
+            >
+              About
+            </RouterLink> -->
 
             <!-- <div id="locale-buttons-container-mobile">
               <button
@@ -164,7 +183,7 @@ const setLocale = (localeOption) => {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 25%;
+  height: 35%;
   background: #fff;
 }
 #close-navbar-menu-button-container {
@@ -192,7 +211,7 @@ const setLocale = (localeOption) => {
   justify-content: space-evenly;
   align-items: flex-start;
   width: 100%;
-  height: 72%;
+  height: 80%;
   padding-left: 10px;
   background: #176B87;
   border-top: 1px solid #27272A;
@@ -215,12 +234,16 @@ const setLocale = (localeOption) => {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 230px;
+  width: 250px;
   height: 100%;
   text-decoration: none;
   color: #fff;
-  padding-left: 15px;
+  padding-left: 5px;
   font-size: 20px;
+}
+.practical-email-logo {
+  width: 45px;
+  height: 45px;
 }
 .trinity-logo {
   width: 35px;
@@ -295,13 +318,17 @@ const setLocale = (localeOption) => {
 }
 
 @media screen and (width > 768px) {
-  .project-logo {
-    width: 185px;
-    height: 50px;
-  }
   #logo-container {
-    width: 270px;
-    padding-left: 10px;
+    width: 400px;
+    padding-left: 20px;
+    font-size: 25px;
+  }
+  .practical-email-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .nav-item {
+    font-size: 20px;
   }
 }
 </style>

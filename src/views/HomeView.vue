@@ -5,6 +5,12 @@
         <h1 id="home-title">
           The most easy way to send emails
         </h1>
+
+        <img
+          id="practical-email-logo"
+          src="../assets//images/practical-email-full.png"
+          alt="main logo"
+        >
     
         <ul id="items-list">
           <li class="list-item">
@@ -150,6 +156,7 @@
   height: 45%;
 }
 #titles-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -165,6 +172,13 @@
   height: 60%;
   font-size: 65px;
   font-weight: bold;
+}
+#practical-email-logo {
+  position: absolute;
+  bottom: 190px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
 }
 #items-list {
   display: flex;
@@ -251,5 +265,24 @@
   height: 55%;
 }
 
-@media screen and (width > 768px) {}
+@media screen and (width > 768px) {
+  #practical-email-logo {
+    bottom: 190px;
+    right: 150px;
+    width: 250px;
+    height: 250px;
+  }
+  #home-title {
+    width: 60%;
+    font-size: 75px;
+  }
+}
+@media screen and (768px <= width <= 1000px) {
+  #practical-email-logo {
+    bottom: 200px;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+  }
+}
 </style>
