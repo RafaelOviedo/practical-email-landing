@@ -300,7 +300,7 @@ const setLocale = (localeOption) => {
     height: 50px;
   }
   #logo-container {
-    width: 210px;
+    width: 270px;
     padding-left: 10px;
   }
 }
