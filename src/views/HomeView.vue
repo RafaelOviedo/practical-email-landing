@@ -1,9 +1,10 @@
+<!-- eslint-disable vue/no-v-html -->
 <template>
   <main id="home-component">
     <div id="hero-section-container">
       <div id="titles-container">
         <h1 id="home-title">
-          The most easy way to send emails
+          {{ translate('theMostEasyWay') }}
         </h1>
 
         <img
@@ -14,20 +15,20 @@
     
         <ul id="items-list">
           <li class="list-item">
-            Is FREE
+            {{ translate('isFree') }}
           </li>
           <li class="list-item">
-            No need of backend technologies
+            {{ translate('noBackendNeeded') }}
           </li>
           <li class="list-item">
-            Is easy as cake to configure
+            {{ translate('easyAsCake') }}
           </li>
         </ul>
       </div>
 
       <div id="example-container">
         <div id="example-title-container">
-          <span>CODE EXAMPLE</span>
+          <span>{{ translate('codeExample') }}</span>
         </div>
 
         <div
@@ -59,12 +60,10 @@
     </div>
 
     <div id="docs-section">
-      <p id="introduction-text">
-        The only thing you need to do is set your email at the end of the endpoint 
-        <span style="background: lightgray;">https://practical-email.vercel.app/email/your@email.com</span> 
-        in the action attribute of the form, and set the <span style="background: lightgray;">POST</span> method in the 
-        <span style="background: lightgray;">method</span> attribute.
-      </p>
+      <p
+        id="introduction-text"
+        v-html="translate('text1')"
+      />
 
       <div
         id="first-code-example"
@@ -80,13 +79,10 @@
   </pre>
       </div>
 
-      <p id="second-step-text">
-        You will also need to add the <span style="background: lightgray;">name</span> attribute to your inputs to make it work, you have to add the name attribute to all your 
-        <span style="background: lightgray;">&lt;input&gt;, &lt;select&gt; and &lt;text-area&gt;</span> elements.
-        <br>
-        <br>
-        You can have all the necessary inputs for your form, and it will dynamically get the information.
-      </p>
+      <p
+        id="second-step-text"
+        v-html="translate('text2')"
+      />
 
       <div
         id="second-code-example"
@@ -104,10 +100,9 @@
       </div>
 
       <div id="axios-example-container">
-        <span id="axios-title">AXIOS EXAMPLE</span>
+        <span id="axios-title">{{ translate('axiosExample') }}</span>
         <p>
-          If you're using something more dynamic to send http requests like axios (or any other http library or api like fetch), 
-          you can send emails by the POST method as well.
+          {{ translate('axiosText') }}
         </p>
 
         <div
@@ -138,6 +133,9 @@
 </template>
 
 <script setup>
+import { useLocalization } from '@/composables/localization';
+
+const { translate } = useLocalization();
 </script>
 
 <style scoped>

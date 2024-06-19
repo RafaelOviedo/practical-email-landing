@@ -1,0 +1,25 @@
+{
+  "home": "Inicio",
+  "demo": "Demo",
+  "about": "Sobre",
+
+  "theMostEasyWay": "La forma más fácil de enviar emails",
+  "isFree": "Es GRATIS",
+  "noBackendNeeded": "No se necesitan tecnologías de backend",
+  "easyAsCake": "Es muy fácil de configurar",
+
+  "codeExample": "CÓDIGO EJEMPLO",
+  "text1": "Lo único que tienes que hacer es agregar tu email al final del endpoint <span style='background: lightgray;'>https://practical-email.vercel.app/email/your@email.com</span> en el atributo <span style='background: lightgray;'>action</span> del formulario, y configurar el método <span style='background: lightgray;'>POST</span> en el atributo <span style='background: lightgray;'>method</span>.",
+  "text2": "También necesitas agregar el atributo <span style='background: lightgray;'>name</span> a tus inputs para que funcione, debes agregar el atributo <span style='background: lightgray;'>name</span> a todos tus elementos <span style='background: lightgray ;'>&lt;input&gt;, &lt;select&gt;, &lt;text-area&gt;</span>. <br><br> Puedes tener todos los inputs necesarios para tu formulario y obtendrá la información dinámicamente.",
+  "axiosExample": "EJEMPLO AXIOS",
+  "axiosText": "Si está utilizando algo más dinámico para enviar solicitudes http como axios (o cualquier otra biblioteca o API http como fetch), también puedes enviar emails mediante el método POST.",
+
+  "demoTitle": "Haz una prueba y envía un email",
+  "demoText": "El panel HTML de abajo es editable; puedes cambiar los elementos ahí y el formulario en la pestaña result se actualizará en tiempo real. Simplemente reemplaza your@email.com con tu email real, luego envía el formulario a la derecha para recibir el email en tu bandeja de entrada.",
+
+  "aboutText1": "A veces cuando trabajas en un proyecto que implica permitir al usuario enviar un formulario, no hay tantas opciones para enviar emails desde ese formulario, o si las hay, son de pago, difíciles de usar o tienes para crear una cuenta.",
+  "aboutText2": "Practical Email está inspirado en FormSubmit, un servicio para configurar fácilmente un email donde quieres recibir los emails y listo.",
+
+  "thanksTitle": "¡Tu mensaje fue enviado exitosamente!",
+  "thanksSubTitle": "Gracias por usar PRACTICAL EMAIL"
+}

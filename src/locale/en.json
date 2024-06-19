@@ -1,0 +1,25 @@
+{
+  "home": "Home",
+  "demo": "Demo",
+  "about": "About",
+
+  "theMostEasyWay": "The most easy way to send emails",
+  "isFree": "Is FREE",
+  "noBackendNeeded": "No need of backend technologies",
+  "easyAsCake": "Is easy as cake to configure",
+
+  "codeExample": "CODE EXAMPLE",
+  "text1": "The only thing you need to do is set your email at the end of the endpoint <span style='background: lightgray;'>https://practical-email.vercel.app/email/your@email.com</span> in the <span style='background: lightgray;'>action</span> attribute of the form, and set the <span style='background: lightgray;'>POST</span> method in the <span style='background: lightgray;'>method</span> attribute.",
+  "text2": "You will also need to add the <span style='background: lightgray;'>name</span> attribute to your inputs to make it work, you have to add the name attribute to all your <span style='background: lightgray;'>&lt;input&gt;, &lt;select&gt; and &lt;text-area&gt;</span> elements. <br><br> You can have all the necessary inputs for your form, and it will dynamically get the information.",
+  "axiosExample": "AXIOS EXAMPLE",
+  "axiosText": "If you're using something more dynamic to send http requests like axios (or any other http library or api like fetch), you can send emails by the POST method as well.",
+
+  "demoTitle": "Make a test and send an email",
+  "demoText": "The HTML panel below is editable; you can change the elements there, and the form on the result tab will update in real time. Simply replace your@email.com with your real email address, then submit the form on the right to receive the submission in your inbox.",
+  
+  "aboutText1": "Sometimes when you're working on a project that involves allowing the user to send a form, there aren't so many options to send emails from that form, or if there are, they are of pay, hard to use, or you have to create an account.",
+  "aboutText2": "Practical Email was inspired by FormSubmit, a service to easily set an email address where you want the emails to go and that's it.",
+
+  "thanksTitle": "Your message was sent successfully!",
+  "thanksSubTitle": "Thanks for using PRACTICAL EMAIL"
+}

@@ -31,24 +31,24 @@
           to="/"
           @click="closeNavBarPanel"
         >
-          Home
+          {{ translate('home') }}
         </RouterLink>
         <RouterLink
           class="nav-item"
           to="/demo"
           @click="closeNavBarPanel"
         >
-          Demo
+          {{ translate('demo') }}
         </RouterLink>
-        <!-- <RouterLink
+        <RouterLink
           class="nav-item"
           to="/about"
           @click="closeNavBarPanel"
         >
-          About
-        </RouterLink> -->
+          {{ translate('about') }}
+        </RouterLink>
         
-        <!-- <div id="locale-buttons-container">
+        <div id="locale-buttons-container">
           <button
             class="locale-button"
             :class="store.locale === 'en' ? 'selected-locale' : ''"
@@ -63,7 +63,7 @@
           >
             ES
           </button>
-        </div> -->
+        </div>
       </div>
     </div>
 
@@ -88,24 +88,24 @@
               to="/"
               @click="closeNavBarPanel"
             >
-              Home
+              {{ translate('home') }}
             </RouterLink>
             <RouterLink
               class="nav-item"
               to="/demo"
               @click="closeNavBarPanel"
             >
-              Demo
+              {{ translate('demo') }}
             </RouterLink>
-            <!-- <RouterLink
+            <RouterLink
               class="nav-item"
               to="/about"
               @click="closeNavBarPanel"
             >
-              About
-            </RouterLink> -->
+              {{ translate('about') }}
+            </RouterLink>
 
-            <!-- <div id="locale-buttons-container-mobile">
+            <div id="locale-buttons-container-mobile">
               <button
                 class="locale-button-mobile"
                 :class="store.locale === 'en' ? 'selected-locale' : ''"
@@ -120,7 +120,7 @@
               >
                 ES
               </button>
-            </div> -->
+            </div>
           </div>
         </div>
       </Transition>
@@ -130,14 +130,13 @@
 
 <script setup>
 import { ref } from 'vue';
-import { RouterLink, useRouter } from 'vue-router';
-// import { useLocalizationStore } from '@/stores/locale';
+import { RouterLink } from 'vue-router';
+import { useLocalizationStore } from '@/stores/locale';
+import { useLocalization } from '@/composables/localization';
 
-// const { translate } = useLocalization();
+const { translate } = useLocalization();
 
-// const store = useLocalizationStore();
-
-const router = useRouter();
+const store = useLocalizationStore();
 
 const isNavBarPanelOpen = ref(false);
 
@@ -183,7 +182,7 @@ const setLocale = (localeOption) => {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 35%;
+  height: 40%;
   background: #fff;
 }
 #close-navbar-menu-button-container {
@@ -211,7 +210,7 @@ const setLocale = (localeOption) => {
   justify-content: space-evenly;
   align-items: flex-start;
   width: 100%;
-  height: 80%;
+  height: 83%;
   padding-left: 10px;
   background: #176B87;
   border-top: 1px solid #27272A;
@@ -260,7 +259,7 @@ const setLocale = (localeOption) => {
   color: #fff;
 }
 #locale-buttons-container {
-  width: 10%;
+  width: 15%;
   height: 40%;
 }
 .locale-button {
@@ -271,28 +270,32 @@ const setLocale = (localeOption) => {
   font-size: 12px;
   font-weight: bold;
   color: #fff;
-  background: #27272A;
+  background: #176B87;
   cursor: pointer;
+  opacity: 0.5;
 }
 #locale-buttons-container-mobile {
   width: 30%;
-  height: 10%;
+  height: 15%;
 }
 .locale-button-mobile {
   width: 50%;
-  height: 100%;
+  height: 90%;
   border: 1px solid #fff;
   border-radius: 3px;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
-  background: #27272A;
+  background: #176B87;
   cursor: pointer;
+  opacity: 0.5;
 }
 .selected-locale {
-  color: #27272A;
+  color: #176B87;
   border: none;
-  background: #BEFF00;
+  background: #fff;
+  border: 1px solid #176B87;
+  opacity: 1;
 }
 /* TRANSITION CLASSES COMPONENT */
 .v-enter-active,
