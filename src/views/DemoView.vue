@@ -4,6 +4,11 @@
       Make a test and send an email
     </h1>
 
+    <p id="description-text">
+      The HTML panel below is editable; you can alter the elements there, and the form on the result tab will update in real time. 
+      Simply replace your@email.com with your real email address, then submit the form on the right to receive the submission in your inbox.
+    </p>
+
     <iframe
       height="600"
       style="width: 90%;"
@@ -25,7 +30,7 @@
 <style>
 #email-demo-view {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -38,5 +43,9 @@
   width: 90%;
   font-weight: bold;
   text-align: center;
+}
+#description-text {
+  width: 90%;
+  font-size: 20px;
 }
 </style>
